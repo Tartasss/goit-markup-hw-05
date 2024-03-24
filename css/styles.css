@@ -550,3 +550,62 @@ ol {
 .link-footer-media:focus {
   background-color: #31d0aa;
 }
+
+.sub {
+  display: block;
+  margin-left: 80px;
+  width: 453px;
+  height: 80px;
+}
+
+.sub-form {
+  display: flex;
+  gap: 24px;
+}
+.form-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+input::placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  display: flex;
+}
+
+.sub-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+}
