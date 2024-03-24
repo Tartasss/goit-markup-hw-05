@@ -385,11 +385,52 @@
             <p class="form-text">Subscribe</p>
             <form class="sub-form">
              <label>
-                <input type="email" name="email-for-sub" placeholder="E-mail"/>
+                <input type="email" name="email-for-sub" class="email-input" placeholder="E-mail"/>
              </label>
-             <button type="submit" class="sub-button">Subscribe</button>            
+             <button type="submit" class="sub-button">Subscribe<svg class="telegram-icon" wigth="24" height="24"><use href="./images/icons.svg#icon-telegram"></use></svg></button>
+
             </form>
         </div>
     </footer>
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button type="button" class="modal-close-btn"></button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form>
+                <div class="modal-field">
+                    <label class="modal-label">
+                        Name
+                        <input 
+                        name="user-name"
+                        class="modal-input"
+                        type="name" 
+                        required/>
+                    </label>
+                    <label class="modal-label">
+                        Phone
+                        <input 
+                        name="user-phone" 
+                        class="modal-input" 
+                        type="tel" 
+                        required/>
+                    </label>
+                    <label class="modal-label">
+                        Email
+                        <input 
+                        name="user-email" 
+                        class="modal-input"
+                        type="email" 
+                        required />
+                    </label>
+                    <label class="modal-label">
+                        Comment
+                        <input name="user-comment"
+                         class="user-comment" 
+                         type="text"/>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
