@@ -759,6 +759,10 @@ input::placeholder {
   left: 16px;
 }
 
+.comment-field {
+  margin-bottom: 16px;
+}
+
 .input-icon {
   position: absolute;
   left: 16px;
@@ -776,8 +780,8 @@ input::placeholder {
 }
 
 .priv {
-  font-size: 12px;
-  line-height: 1.17;
+  line-height: 14px;
+  line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -794,4 +798,40 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+.check-link {
+  line-height: 16px;
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.checkbox-container:checked + .priv span {
+  fill: #f4f4fd;
+  border: none;
+  background-color: #404bbf;
+}
+
+.icon-chekbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-container input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
 }
