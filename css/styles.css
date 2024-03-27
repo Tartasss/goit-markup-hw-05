@@ -780,8 +780,8 @@ input::placeholder {
 }
 
 .priv {
-  line-height: 14px;
-  line-height: 1.16667;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -798,6 +798,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .check-link {
@@ -808,13 +809,13 @@ input::placeholder {
   color: #4d5ae5;
 }
 
-.checkbox-container:checked + .priv span {
-  fill: #f4f4fd;
-  border: none;
-  background-color: #404bbf;
+.input-check:checked + .icon-checkbox {
+  border-radius: 2px;
+  fill: #404bbf;
+  border: 1px solid #404bbf;
 }
 
-.icon-chekbox {
+.icon-chek-box {
   position: relative;
   width: 16px;
   height: 16px;
@@ -834,4 +835,22 @@ input::placeholder {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
+}
+
+.submit-btn {
+  margin: 0 auto;
+  display: block;
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  color: #ffffff;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
