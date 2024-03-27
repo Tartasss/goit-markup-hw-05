@@ -819,7 +819,7 @@ input::placeholder {
 .input-check:checked + .priv span {
   border-radius: 2px;
   background-color: #404bbf;
-  border: 1px solid #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
