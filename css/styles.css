@@ -818,8 +818,9 @@ input::placeholder {
 
 .input-check:checked + .priv span {
   border-radius: 2px;
-  fill: #404bbf;
+  background-color: #404bbf;
   border: 1px solid #404bbf;
+  fill: #f4f4fd;
 }
 
 .icon-chek-box {
